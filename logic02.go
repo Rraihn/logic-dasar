@@ -17,6 +17,9 @@ func main() {
 
 	fmt.Println("Logic2Soal05")
 	Logic2Soal05(9)
+
+	fmt.Println("Logic2Soal06")
+	Logic2Soal06(9)
 }
 
 func Logic2Soal01(n int) {
@@ -82,12 +85,49 @@ func Logic2Soal04(n int) {
 }
 
 func Logic2Soal05(n int) {
-	x := n / 2
-	y := 3
+	//nilai tengah
+	nt := n / 2
+	//nilai yang akan bertambah
+	a := 3
 
+	//looping baris
 	for i := 0; i < n; i++ {
+		//looping kolom
 		for j := 0; j < n; j++ {
-
+			fmt.Print(a, "\t")
+		} //kolom selesai
+		//ke baris selanjutnya :
+		fmt.Println("\n")
+		//update value variabel a
+		if i < nt {
+			a += 3
+		} else {
+			a -= 3
 		}
+	}
+}
+
+func Logic2Soal06(n int) {
+	//nilai tengah
+	nt := n / 2
+
+	//looping baris
+	for i := 0; i < n; i++ {
+		//set value variabel a
+		a := 3
+		//looping kolom
+		for j := 0; j < n; j++ {
+			if j < nt {
+				fmt.Print(a, "\t")
+				//update value variabel a
+				a += 3
+			} else {
+				fmt.Print(a, "\t")
+				//update value variabel a
+				a -= 3
+			}
+		}
+		//pindah baris
+		fmt.Println("\n")
 	}
 }
