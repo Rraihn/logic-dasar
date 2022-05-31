@@ -6,6 +6,63 @@ import (
 	"testing"
 )
 
+func TestSoal01(t *testing.T) {
+	n := 10
+	a := 1
+	for i := 0; i < n; i++ {
+		if i%2 == 0 {
+			fmt.Print(a, "\t")
+			a++
+		} else {
+			fmt.Print(3, "\t")
+		}
+	}
+}
+
+func TestSoal02(t *testing.T) {
+	n := 10
+	a := 1
+
+	for i := 0; i < n; i++ {
+		if i%2 == 1 {
+			fmt.Print(a, "\t")
+			a++
+		} else {
+			fmt.Print(3, "\t")
+		}
+	}
+}
+
+func TestLogic03(t *testing.T) {
+	n := 10
+	x := 99
+	a := 1
+
+	for i := 0; i < n; i++ {
+		if i%2 == 0 {
+			fmt.Print(a, "\t")
+			a++
+		} else {
+			fmt.Print(x, "\t")
+		}
+	}
+}
+
+func TestSoal04(t *testing.T) {
+	n := 10
+	x := 777
+	a := 1
+
+	for i := 0; i < n; i++ {
+		if i%2 == 1 {
+			fmt.Print(a, "\t")
+			a++
+		} else {
+			fmt.Print(x, "\t")
+		}
+	}
+}
+
 func TestSoal05(t *testing.T) {
 	n := 15
 
